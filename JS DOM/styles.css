@@ -12,14 +12,12 @@ body{
     background-color: #087afd1c;
 }
 .main{
-    width: 75%;
-    height: 230vh;
-    border: 1px solid rgb(250, 248, 248);
-    background-color: #f7f7f7;
+    width: 890px;
+    height: 1420px;
+    margin: 50px auto;
+    font-family: 'Roboto', sans-serif;
     box-shadow: 3px 3px 10px rgb(145, 163, 184);
     position: relative;
-    left: 15%;
-    font-family: 'Roboto', sans-serif;
 }
 input[type='range']{
     height: 5px;
@@ -83,43 +81,58 @@ h4{
 h5{
     position: relative;
     top: 15px;
+    width: 150px;
     left: 150px;
     font-weight: 900;
     font-size: medium;
     opacity: 0.7;
 }
-.boxBlack{
-    position: relative;
-    width: 100%;
-    height: 21%;
-    background-color: rgba(0, 0, 0, 0.596);
-}
+
 img{
-    position: absolute;
-    top: 1%;
-    left: 37%;
-    width: 23%;
-    height: 16%;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 350px;
+    border-width: 7px;
+    border-color: rgb(233, 202, 28);
+    border-style: dotted;
     object-fit: cover;
 }
-.white{
+.name>h2{
+    position: relative;
+    top: 10px;
+    letter-spacing: 2.5px;
+}
+.name{
+    height: 55px;
+    width: 50%;
+    background-color: rgb(253, 249, 44);
     position: absolute;
-    top: 15%;
-    width: 100%;
-    height: 48px;
-    background-color: rgb(245, 248, 245);
+    top: 180px;
+    left: 200px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.name{
-    background-color: yellow;
+.boxBlack{
+    height: 190px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
     position: relative;
-    top: -27%;
-    left: 29%;
-    width: 40%;
-    height: 73px;
-    font-size: 20px;
-    border-radius: 4px;
+}
+
+.white{
+    height: 35px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.black{
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
 }
 .h3{
     position: relative;
@@ -127,38 +140,46 @@ img{
     left: 50px;
     letter-spacing: 2.5px;
 }
-
 .address{
-    position: relative;
-    top: 4px;
-    left: 15%;
+    height: 20px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-width: 0.2px;
+    text-align: center;
+    margin-top: 10px;
 }
+
+
+/* Right Side Container*/
+.leftSide{
+    width: 47%;
+}
+
 .profileContainer{
-    height: 190px;
+    margin:-5px 0 0 0;
+    height: 180px;
+    width: 100%;
+    text-align: left;
 }
 .proPara{
-    position: relative;
-    width: 40%;
-    top: 16px;
-    left: 30px;
+    width: 93%;
+    margin: 10px 0 0 20px;
     text-align: justify;
+    line-height: 24px;
+}
+
+/*Skills Containers*/
+.skills{
+    width: 99%;
+    margin-top: -35px;
 }
 input[type="range"]{
     display: flex;
-    width: 51%;
+    width: 50%;
     height: 19px;
+    margin-left: px;
 }
 
-.cont{
-    height: 325px;
-    position: relative;
-    top: -10px;
-}
-
-.skillsCont{
-    position: relative;
-    left: 20px;
-}
 .techitem{
     padding:1px;
     width: 10px;
@@ -178,8 +199,8 @@ input[type="range"]{
 .inputDiv{
     position: relative;
     top: -144.5px;
-    left: 225px;
-    align-items: center;
+    left: 180px;
+    width: 115%;
 }
 .h4-3{
     position:relative;
@@ -190,11 +211,8 @@ input[type="range"]{
     width: 50%;
     
 }
-.skills{
-    width: 49%;
-    position: relative;
-    top: -50px;
-}
+
+
 .addSkills p{
     margin: 7px 0;
 }
@@ -206,12 +224,12 @@ input[type="range"]{
 .addskill{
     position: relative;
     top: -252px;
-    left: 225px;
+    left: 190px;
+    width: 115%;
 }
 /*Work Experience*/
-.workMain{
-    position: relative;
-    top: -10px;
+.work_Container{
+    margin-top: -270px;
 }
 .h2-work1st{
     position: relative;
@@ -225,8 +243,8 @@ input[type="range"]{
 
 .date{
     position: relative;
-    top: -10px;
-    left: 300px;
+    top: -20px;
+    left: 280px;
     width: 140px;
     text-align: center;
     font-size: medium;
@@ -235,24 +253,22 @@ input[type="range"]{
 .place{
     position: relative;
     left: 30px;
-    top: 0px;
+    top: -5px;
     font-size: 16px;
     font-weight: 500;
 }
 .event{
-    position: relative;
+    margin:10px 0 0 30px;
     font-weight: 800;
     font-size: medium;
-    top: 10px;
-    left: 30px;
-    width: 20%;
+    width: 110px;
     opacity: 0.7;
 }
 .workUL{
     position: relative;
     left: 50px;
-    top: 10px;
-    width: 43%;
+    top: 5px;
+    width: 90%;
     text-align: center;
     height: 20%;
     line-height: 25px;
@@ -268,18 +284,22 @@ ul{
     font-weight: 400;
 }
 
+.rightSide{
+    width: 50%;
+    position: absolute;
+    top:290px;
+    left: 445px;
+}
 .work_Container2{
     width: 100%;
-    height: 33%;
     position: relative;
-    top: -73%;
-    left: 51%;
+    left: -8px;
 }
 .h2-work2nd{
     position: relative;
     left: 70px;
     top:-6px ;
-    height: 9px;
+    height: 30px;
 }
 
 .event2{
@@ -289,28 +309,28 @@ ul{
     width: 200px;
     position: relative;
     left: 25px;
-    top: 25px;
+    top: 5px;
     opacity: 0.7;
 }
 .date2{
     position: relative;
     font-weight: 500;
-    top: -10px;
-    left: 30%;
-    width: 20%;
+    top: -30px;
+    left: 300px;
+    width: 140px;
     text-align: center;
 }
 .place2{
     position: relative;
-    height: 10px;
-    top: 15px;
-    left: 30px;
+    height: 25px;
+    width: 160px;
+    left: 25px;
 }
 .workUL2{
     position: relative;
     left: 49px;
-    top: 30px;
-    width: 42.5%;
+    top: 5px;
+    width: 89%;
     text-align: justify;
 }
 .fa-graduation-cap{
@@ -321,17 +341,18 @@ ul{
 .hori{
     position: absolute;
     top: 24%;
-    left: 50%; 
+    left: 49%; 
     height: 75%;
     width: 1.5px;
     background-color: gray;
 }
 .education{
     position: relative;
-    top: -84%;
-    left: 55.5%;
-    width: 60%;
-}
+    top: 25px;
+    left: 35px;
+    width: 100%;
+
+} 
 .fa-graduation-cap{
     position: relative;
     top: -5px;
@@ -362,16 +383,18 @@ ul{
     top: -27px;
     left: -11px;
     font-weight: 600;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .project{
-    width: 75%;
+    width: 95%;
     position: relative;
     top: -20px;
     left: -8px;
+    opacity: 0.9;
+    letter-spacing: 0.3px;
 }
 .edu_ul{
-    width: 68%;
+    width: 87%;
     position: relative;
     top: -6px;
     left: 10px;
