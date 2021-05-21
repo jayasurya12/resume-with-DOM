@@ -12,19 +12,21 @@ image.setAttribute('class',"imageDiv");
 let img=document.createElement('img');
 img.setAttribute('src',"https://gumlet.assettype.com/vikatan%2F2019-05%2F419ad7ed-492d-45d7-9063-3babbe9919bb%2F151555_thumb.jpg?auto=format%2Ccompress&w=1200");
 image.appendChild(img);
-main.appendChild(image);
-//image h3 
-let nameHead=document.createElement('div');
-nameHead.setAttribute('class',"name");
-let h3=document.createElement('h3');
-h3.setAttribute('class',"h3");
-h3.innerText="Vaigai Puyal Vadivelu";
-nameHead.appendChild(h3);
+let nameBox=document.createElement('div');
+nameBox.setAttribute('class','name');
+let h2=document.createElement('h2');
+h2.innerHTML='Vaigai Puyal Vadivelu';
+nameBox.appendChild(h2);
+image.appendChild(nameBox);
+blackBox.appendChild(image);
 //Top white line
 let white= document.createElement('div');
 white.setAttribute('class',"white");
-white.appendChild(nameHead);
 main.appendChild(white);
+//bottom BolckLine
+let black=document.createElement('div');
+black.setAttribute('class','black');
+main.appendChild(black)
 
 let address=document.createElement('div');
 address.setAttribute('class',"address");
@@ -32,12 +34,10 @@ let addressP=document.createElement("p");
 addressP.innerText="N.Damen Avenue, Chicago 99999|999-999-9999 |helo@kickresume.com |www.kickeresume.com ";
 address.appendChild(addressP);
 main.appendChild(address)
-
-let hrLine=document.createElement('div');
-hrLine.setAttribute('class',"hrLine");
-main.appendChild(hrLine);
-
 //profile Contents
+let leftSideContent=document.createElement('div');
+leftSideContent.setAttribute('class','leftSide');
+main.appendChild(leftSideContent);
 
 let profileContainer=document.createElement('div');
 profileContainer.setAttribute('class',"profileContainer");
@@ -56,11 +56,12 @@ profileParagraph.setAttribute('class',"proPara");
 profileParagraph.innerText="Innovation optimized solution seeker. Excited to be at the deployment phase of my new career as a webdeveloper. I am ambitious adventurous, assiduous, animated, and an alliteration advocate."
 profileContainer.appendChild(profileParagraph);
 
-main.appendChild(profileContainer);
+leftSideContent.appendChild(profileContainer);
 
 //Skill Container..
 let skillContainer=document.createElement('div');
 skillContainer.setAttribute('class',"skills");
+leftSideContent.appendChild(skillContainer);
 //Skill Icons
 let skillIcon=document.createElement('i');
 skillIcon.setAttribute('class',"fas fa-flask");
@@ -132,14 +133,12 @@ for(i=0; i<addSkillValues.length; i++){
 }
 
 skillsCont.appendChild(addSkillSet);
-
-
 skillContainer.appendChild(skillsCont);
-main.appendChild(skillContainer);
 
 //Work Experience....
-let workMainContainer=document.createElement('div');
-workMainContainer.setAttribute('class',"workMain");
+// let workMainContainer=document.createElement('div');
+// workMainContainer.setAttribute('class',"workMain");
+// leftSideContent.appendChild(workMainContainer);
 
 let workContainer=document.createElement('div');
 workContainer.setAttribute('class',"work_Container");
@@ -184,14 +183,17 @@ workExperience_LI3.innerText="Execise fiscal control over budget creation, track
 workExperience_UL.appendChild(workExperience_LI3);
 //...
 workContainer.appendChild(workExperience_UL);
-workMainContainer.appendChild(workContainer);
-main.appendChild(workMainContainer);
+leftSideContent.appendChild(workContainer);
+
 
 ///Second Work Experience...
+let rightSideContent=document.createElement('div');
+rightSideContent.setAttribute('class','rightSide');
+main.appendChild(rightSideContent);
 //Work Experience2....
 let workContainer2=document.createElement('div');
 workContainer2.setAttribute('class',"work_Container2");
-
+rightSideContent.appendChild(workContainer2)
 //workIcons2..
 let workIcon2=document.createElement('i');
 workIcon2.setAttribute('class',"fas fa-briefcase");
@@ -241,10 +243,10 @@ let workExperience_li4=document.createElement('li');
 workExperience_li4.innerText= "Building relationships with key media players.";
 workExperience_UL2.appendChild(workExperience_li4);
 
-main.appendChild(workContainer2);
 //Education List...
 let education=document.createElement('div');
 education.setAttribute('class',"education");
+rightSideContent.appendChild(education);
 //Education Icons..
 educationIcon=document.createElement('i');
 educationIcon.setAttribute('class',"fas fa-graduation-cap");
@@ -302,7 +304,7 @@ university.setAttribute('class',"univ");
 university.innerText="University of California, Los Angeles";
 education.appendChild(university);
 //education append...
-main.appendChild(education);
+
 //Work Horizontal Line...
 let hori=document.createElement('div');
 hori.setAttribute('class',"hori");
